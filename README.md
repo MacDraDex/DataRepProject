@@ -75,7 +75,7 @@ Column - TOWN    | Row - NAME
 **GALWAY** | *BALLYBANE NEIGHBOURHOOD VILLAGE*
 **GALWAY** | *Galway City Library*
 
-**JSON**
+**JSON Council_ID/Town/Name/type/url **
 ```
 [
   {"Council_ID": GY,
@@ -99,7 +99,7 @@ Column - TOWN    | Row - NAME
 -9.07446057544246 | 53.277400205441175 |*WESTSIDE LIBRARY* | **GALWAY**
 -9.002184575683327 | 53.282740990239205 |*BALLYBANE PUBLIC LIBRARY* | **GALWAY**
 -9.052011015315966 | 53.271532932942051 |*Galway City Library* | **GALWAY**
-**JSON**
+**JSON Council_ID/Town/Name/type/url**
 ```
 [
   {"Council_ID": GY,
