@@ -6,8 +6,10 @@
 ## Introduction
 This project provides the design and documentation for the dataset "County Galway Libraries" which is available at [data.gov.ie](https://data.gov.ie/dataset/county-galway-libraries).
 
-This dataset provides usefull information about public libraries such as : location,address,web address, e-mail and opening times in Co.Galway.
-Below You will find a breakdown of dataset provided in CSV file.
+### Dataset
+This dataset provides usefull information about public libraries such as : location,address,web address, e-mail and opening times in Co.Galway. In this dataset information are stored in 27 rows that contains name in the field and 15 columns which contains the names of headers.  
+
+Below You will find a breakdown of dataset provided in [CSV file](https://data.gov.ie/dataset/county-galway-libraries/resource/7b003559-841f-4342-b2be-9a7ed45439cf).
 
 Column Name | Description
 ------------|------------
@@ -31,9 +33,9 @@ User can use ***HTTP*** methods to interact with the API but also ***JSON*** req
 >  ***LIST OF HTTP QUERIES***
 ------------------------------------------------------------------------------------------------
 >-  GET: Gathers information of the selected object. It will not change any value on the server.
->-  POST: Creates new elements in the API. Used to create the different objects in the API.
->-  PUT: Modifies an existing element in the API. Currently the job element is the only one that allows modifications.
->-  DELETE: Removes existing elements via API.
+>-  POST: Creates new entries in the table database.
+>-  PUT: Modifies an existing data stored in table.
+>-  DELETE: Removes existing data from table.
 
 To access the main page of website user must use **GENERAL URL**(*Uniform Resource Locator*) which for example might be  : http://irishlibraries.ie .
 
