@@ -27,11 +27,13 @@ Column Name | Description
 **Opening_Hours**| Opening Hours of library.
 
 User can use ***HTTP*** methods to interact with the API but also ***JSON*** requests will work aswell.
-> - ***LIST OF HTTP QUERIES***
-> - GET: Gathers information of the selected object. It will not change any value on the server.
-> - OST: Creates new elements in the API. Used to create the different objects in the API.
-> - EDIT: Modifies an existing element in the API. Currently the job element is the only one that allows modifications.
-> - DELETE: Removes existing elements via API.
+
+>  ***LIST OF HTTP QUERIES***
+------------------------------------------------------------------------------------------------
+>-  GET: Gathers information of the selected object. It will not change any value on the server.
+>-  POST: Creates new elements in the API. Used to create the different objects in the API.
+>-  EDIT: Modifies an existing element in the API. Currently the job element is the only one that allows modifications.
+>-  DELETE: Removes existing elements via API.
 
 
 
