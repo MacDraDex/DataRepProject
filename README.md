@@ -44,11 +44,29 @@ Below you will find an raw example of how data in a rows in table looks like whe
 **GET URL EXAMPLE**
 ---------------------
 
-GET / http://irishlibraries.ie/town/tuam
-
 * http://irishlibraries.ie/[ town+library ]
 
 * http://irishlibraries.ie/town/tuam
+
+
+##HTTP GET 
+* A GET request retrieves data from a web server by specifying parameters in the URL portion of the request.
+* A URL to return a list of all libraries and their values. 
+```
+GET /irishlibraries.ie/town/tuam/ HTTP/1.1
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 (.NET CLR 3.5.30729)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: PHPSESSID=r2t5uvjq435r4q7ib3vtdjq120
+Pragma: no-cache
+Cache-Control: no-cache 
+```
+
  
   Column    | Row
 ------------|------------
@@ -163,7 +181,87 @@ Column - TOWN    | Row - NAME
 ]
 ```
 
+##HTTP POST - for example when we want to change opening hours
 
+* The POST method is used when you want to send some data to the server, for example, file update, form data, etc. The following example makes use of POST method to send a form data to the server.
+
+```
+POST /irishlibraries.ie/town/galway/name/westsidelibrary/opening_hours
+Host: localhost
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 (.NET CLR 3.5.30729)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://localhost/test.php
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 43
+ 
+Opening_Hours = 1.00am to 4.00pm&action=Submit
+```
+
+Database respond :
+
+```
+HTTP/1.1 200 OK
+Date: Mon, 09 nov 2015 12:28:53 GMT
+Server: Apache/2.2.14 (Win32)
+Last-Modified: Fri, 13 Nov 2015 13:15:22 GMT
+ETag: "34aa387-d-1568eb00"
+Vary: Authorization,Accept
+Accept-Ranges: bytes
+Content-Length: 88
+Content-Type: text/html
+Connection: Closed
+
+<html>
+<body>
+<h1>Request Processed Successfully</h1>
+</body>
+</html>
+```
+
+##DELETE REQUEST - to DELETE URL
+
+* The DELETE method is used to request the server to delete a file at a location specified by the given URL.
+
+
+```
+DELETE /irishlibraries.ie/town/galway/list HTTP/1.1
+User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+Host: www.tutorialspoint.com
+Accept-Language: en-us
+Connection: Keep-Alive
+
+```
+Database respond:
+```
+
+HTTP/1.1 200 OK
+Date: 09 nov 2015 12:28:53 GMT
+Server: Apache/2.2.14 (Win32)
+Content-type: text/html
+Content-length: 30
+Connection: Closed
+<html>
+<body>
+<h1>URL deleted.</h1>
+</body>
+</html>
+```
+
+
+###Final thoughts :
+I did this API documentation for my Data Representation and Querying project. During this project I have learned basics of Github Markdown language. My goal was to create easy-to-read document that is going to help all the future users to understand basics of HTTP Requests and how to operate this dataset. I'm more than sure that I'm going to keep this API updated and I will also add new features such as : JS methods and functions and XML code.
+
+###Resources :
+
+* [HTTP METHODS](http://www.tutorialspoint.com/http/http_methods.htm)
+* [GITHUB MARKDOWN](https://guides.github.com/features/mastering-markdown/)
+* [JSON OVERVIEW](http://www.tutorialspoint.com/json/json_overview.htm)
+* [REST API TUTORIAL](http://www.restapitutorial.com/lessons/httpmethods.html)
 
 
 
