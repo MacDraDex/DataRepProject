@@ -42,6 +42,10 @@ To access the main page of website user must use **GENERAL URL**(*Uniform Resour
 Below you will find an raw example of how data in a rows in table looks like when user is searching information about library using a town name.
 
 **GET URL EXAMPLE**
+---------------------
+
+GET / http://irishlibraries.ie/town/tuam
+
 * http://irishlibraries.ie/[ town+library ]
 
 * http://irishlibraries.ie/town/tuam
@@ -75,7 +79,7 @@ Column - TOWN    | Row - NAME
 **GALWAY** | *BALLYBANE NEIGHBOURHOOD VILLAGE*
 **GALWAY** | *Galway City Library*
 
-**JSON Council_ID/Town/Name/type/url **
+**JSON Council_ID/Town/Name/type/url**
 ```
 [
   {"Council_ID": GY,
