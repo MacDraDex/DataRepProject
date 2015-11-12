@@ -82,7 +82,7 @@ Column - TOWN    | Row - NAME
     "Name": BALLYBANE,
     "Name": GC Library,
     "type" : "GET",
-    "https://irishlibraries.ie/town/galway/list"
+    "url":"https://irishlibraries.ie/town/galway/list"
   }
 ]
 ```
@@ -93,13 +93,24 @@ Column - TOWN    | Row - NAME
   * [GALWAY ON GOOGLE MAPS](https://www.google.ie/maps/place/Galway/@53.2839229,-9.1888361,11z/data=!3m1!4b1!4m2!3m1!1s0x485b93955a2d5bff:0x32b1b440a495281)
   
 * **EXAMPLE:** if user would like to find a opening time of a library searching by a library name.
-* **URL:** https://map.irishlibraries.ie/town/galway/name/westsidelibrary/opening_hours
+* **URL:** https://irishlibraries.ie/town/galway/name/westsidelibrary/opening_hours
 
  Column - TOWN    | Row - Name | Row - Opening_Hours
 ------------|------------------|--------------------
 **GALWAY** | *WESTSIDE LIBRARY* | 1.00am to 8.00pm
-**GALWAY** | *BALLYBANE NEIGHBOURHOOD VILLAGE* | 10:30 to 13:00 and 14:00 to 17:00 
-**GALWAY** | *Galway City Library* | 11.00am to 8.00pm
+
+**JSON**
+```
+[
+  {"Council_ID": GY,
+    "Town": Galway, 
+    "Name": WESTSIDE LIBRARY,  
+    "Opening_Hours": [1.00am to 8.00pm]
+    "type" : "GET",
+    "url":"https://irishlibraries.ie/town/galway/name/westsidelibrary/opening_hours"
+  }
+]
+```
 
 
 
