@@ -32,7 +32,7 @@ User can use ***HTTP*** methods to interact with the API but also ***JSON*** req
 ------------------------------------------------------------------------------------------------
 >-  GET: Gathers information of the selected object. It will not change any value on the server.
 >-  POST: Creates new elements in the API. Used to create the different objects in the API.
->-  EDIT: Modifies an existing element in the API. Currently the job element is the only one that allows modifications.
+>-  PUT: Modifies an existing element in the API. Currently the job element is the only one that allows modifications.
 >-  DELETE: Removes existing elements via API.
 
 To access the main page of website user must use **GENERAL URL**(*Uniform Resource Locator*) which for example might be  : http://irishlibraries.ie .
