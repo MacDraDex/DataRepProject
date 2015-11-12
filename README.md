@@ -26,5 +26,14 @@ Column Name | Description
 **WGS84Longitude**| World Geodetic System **(WGS)**,longitude is defined in terms of meridians, which are half-circles running from pole to pole. 
 **Opening_Hours**| Opening Hours of library.
 
+The current methods allowed to interact with the API are:
+**HTTP** , **JSON**
+1.GET: Gathers information of the selected object. It will not change any value on the server.
+2.OST: Creates new elements in the API. Used to create the different objects in the API.
+3.EDIT: Modifies an existing element in the API. Currently the job element is the only one that allows modifications.
+4.DELETE: Removes existing elements via API.
+
+
+
 
 
