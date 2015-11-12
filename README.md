@@ -92,6 +92,51 @@ Column - TOWN    | Row - NAME
 * **URL:** https://map.irishlibraries.ie/place/town/galway
   * [GALWAY ON GOOGLE MAPS](https://www.google.ie/maps/place/Galway/@53.2839229,-9.1888361,11z/data=!3m1!4b1!4m2!3m1!1s0x485b93955a2d5bff:0x32b1b440a495281)
   
+ Row - X  | Row - Y | Row - Name | Column - TOWN    
+------------|------------|---------------|------------
+-9.07446057544246 | 53.277400205441175 |*WESTSIDE LIBRARY* | **GALWAY**
+-9.002184575683327 | 53.282740990239205 |*BALLYBANE PUBLIC LIBRARY* | **GALWAY**
+-9.052011015315966 | 53.271532932942051 |*Galway City Library* | **GALWAY**
+**JSON**
+```
+[
+  {"Council_ID": GY,
+    "Town": Galway, 
+    "Name": WESTSIDE LIBRARY,  
+    "X": -9.07446057544246,
+    "Y": 53.277400205441175 ,
+    "type" : "GET",
+    "url":"https://map.irishlibraries.ie/place/town/galway"
+  }
+]
+
+[
+  {"Council_ID": GY,
+    "Town": Galway, 
+    "Name": BALLYBANE PUBLIC LIBRARY,  
+    "X": -9.002184575683327,
+    "Y": 53.282740990239205 ,
+    "type" : "GET",
+    "url":"https://map.irishlibraries.ie/place/town/galway"
+  }
+]
+
+[
+  {"Council_ID": GY,
+    "Town": Galway, 
+    "Name": Galway City Library,  
+    "X": -9.052011015315966,
+    "Y": 53.271532932942051 ,
+    "type" : "GET",
+    "url":"https://map.irishlibraries.ie/place/town/galway"
+  }
+]
+```
+
+
+  
+
+  
 * **EXAMPLE:** if user would like to find a opening time of a library searching by a library name.
 * **URL:** https://irishlibraries.ie/town/galway/name/westsidelibrary/opening_hours
 
